@@ -1,0 +1,16 @@
+INSERT INTO Brokers (BrokerName,Country,Exchange)
+VALUES ('Goldman Sachs','USA','NYSE'),
+('Morgan Stanley','USA','NYSE'),
+('JPMorgan','USA','NYSE'),
+('Citigroup','USA','NYSE'),
+('Bank of America','USA','NYSE'),
+('Barclays','United Kingdom','London Stock Exchange'),
+('HSBC','United Kingdom','Hong Kong Stock Exchange'),
+('UBS','Switzerland','SIX Swiss Exchange'),
+('Deutsche Bank','Germany','Xetra'),
+('BNP Paribas','France','Euronext Paris'),
+('Nomura','Japan','Tokyo Stock Exchange'),
+('Macquarie','Australia','Australian Securities Exchange'),
+('RBC Capital Markets','Canada','Toronto Stock Exchange'),
+('Jefferies','USA','NYSE'),
+('Mizuho Securities','Japan','Tokyo Stock Exchange')
