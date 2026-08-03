@@ -1,0 +1,2 @@
+ALTER TABLE Brokers
+ADD ParentBrokerId VARCHAR(40) NULL
