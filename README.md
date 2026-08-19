@@ -1,8 +1,35 @@
 # Capital Markets SQL Project
 
- A SQL Projects demonstrating database design, data modelling and reporting for a simiplified Capital Markets Execution and Settlement System.
+## Project Overview
+ 
+This project simulates a simplified Capital Markets trading environment where clients execute trades through brokers across different securities.
 
+The database is designed to support common trading and settlement activities, including:
 
-## Project Status
+- Client and broker management
+- Securities and trade data
+- Trade execution and status tracking
+- Settlement processing
+- Operational and management reporting
+- Performance analysis
 
-🚧 In Progress
+## Database Schema
+
+The project uses the following core tables:
+
+| Table | Purpose|
+|---|---|
+| `clients` | Stores client information |
+| `Brokers` | Stores broker information |
+| `Securities` | Stores security details |
+| `Trades`| Stores trade execution records |
+| `Settlements` | Stores settlement information |
+
+## Key Relationships
+
+- `Trades.ClientId` → `clients.client_id`
+- `Trades.BrokerID` → `Brokers.BrokerID`
+- `Trades.SecurityID` → `Securities.SecurityID`
+- `Settlements.TradeId` → `Trades.TradeId`
+
+The `Trades` table acts as the central transaction table connecting clients, brokers and securities.
